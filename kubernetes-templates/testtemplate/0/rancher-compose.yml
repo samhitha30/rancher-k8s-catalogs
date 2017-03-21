@@ -1,0 +1,4 @@
+.catalog:
+  name: "K8s Guestbook"
+  version: "1.0.0"
+  description: "It's a guestbook, I guess"
