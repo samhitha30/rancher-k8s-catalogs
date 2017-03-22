@@ -1,0 +1,21 @@
+.catalog:
+  name: "K8s HTTPD"
+  version: "1.0.0"
+  description: "It's a HTTPD Server"
+  questions:
+    - variable: "SERVICE_NAME"
+      label: "Service Name"
+      required: true
+      default: "frontend"
+      type: "string"
+    - variable: "SERVICE_PORT"
+      label: "What port to listen on"
+      required: true
+      type: "int"
+      default: 80
+    - variable: "FRONTEND_NAME"
+      label: "Frontend Name"
+      required: true
+      default: "frontend"
+      type: "string"
+    
