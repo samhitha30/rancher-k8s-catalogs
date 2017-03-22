@@ -1,9 +1,9 @@
 apiVersion: v1
-kind: Service
+kind: ReplicationController
 metadata:
-  name: ${SERVICE_NAME}
+  name: ${REPLICAS_NAME}
   labels:
-    name: ${SERVICE_NAME}
+    name: ${REPLICAS_NAME}
 
   selector:
     name: ${FRONTEND_NAME}
