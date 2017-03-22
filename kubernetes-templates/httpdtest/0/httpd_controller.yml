@@ -14,14 +14,6 @@ spec:
     spec:
       containers:
       - name: ubuntu-apache
-        image: https://hub.docker.com/r/samhitha30/ubuntu
-        env:
-        - name: GET_HOSTS_FROM
-          value: dns
-          # If your cluster config does not include a dns service, then to
-          # instead access environment variables to find service host
-          # info, comment out the 'value: dns' line above, and uncomment the
-          # line below.
-          # value: env
+        image: samhitha30/ubuntu:Apache
         ports:
-        - containerPort: 8080
+        - containerPort: 80

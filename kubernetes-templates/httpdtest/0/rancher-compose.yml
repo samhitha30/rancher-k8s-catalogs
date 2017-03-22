@@ -12,8 +12,8 @@
       label: "What port to listen on"
       required: true
       type: "int"
-      default: 80
-    - variable: "FRONTEND_NAME"
+      default: 8090
+    - variable: "TEST_NAME"
       label: "Frontend Name"
       required: true
       default: "frontend"
