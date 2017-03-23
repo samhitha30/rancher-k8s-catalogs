@@ -1,6 +1,6 @@
 .catalog:
   name: "Couchbase Cluster"
-  version: "0.1.0"
+  version: "0.1.1"
   description: "Couchbase Cluster"
   questions:
     - variable: "SERVICE_NAME"
@@ -12,8 +12,8 @@
       label: "What port to listen on"
       required: true
       type: "int"
-      default: 80
-    - variable: "FRONTEND_NAME"
+      default: 8139
+    - variable: "Cluster-Service_NAME"
       label: "cluster-master Name"
       required: true
       default: "cluster-master"
@@ -22,14 +22,14 @@
       label: "Replicas for the cluster-master RC"
       required: true
       type: "int"
-      default: 3
-    - variable: "REDIS_MASTER_NAME"
-      label: "Redis Master Name"
+      default: 2
+    - variable: "cluster-worker_NAME"
+      label: "Cluseter-Worker-name"
       required: true
-      default: "redis-master"
+      default: "cluster-worker"
       type: "string"
-    - variable: "REDIS_SLAVE_NAME"
-      label: "Redis Slave Name"
+    - variable: "Cluster_SLAVE_NAME"
+      label: "cluster-slave Name"
       required: true
-      default: "redis-slave"
+      default: "cluster-node"
       type: "string"
