@@ -1,6 +1,6 @@
 .catalog:
   name: "Couchbase Cluster"
-  version: "0.1.2"
+  version: "0.1.3"
   description: "Couchbase Cluster"
   questions:
     - variable: "SERVICE_NAME"
@@ -16,7 +16,7 @@
     - variable: "Cluster-Service_NAME"
       label: "cluster-master Name"
       required: true
-      default: "cluster-master"
+      default: "client-service"
       type: "string"
     - variable: "cluster-master_REPLICAS"
       label: "Replicas for the cluster-master RC"
