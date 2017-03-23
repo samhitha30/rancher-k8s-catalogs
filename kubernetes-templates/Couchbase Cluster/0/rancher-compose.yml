@@ -6,7 +6,7 @@
     - variable: "SERVICE_NAME"
       label: "Service Name"
       required: true
-      default: "cluster-master"
+      default: "client-service"
       type: "string"
     - variable: "SERVICE_PORT"
       label: "What port to listen on"
