@@ -6,7 +6,7 @@
     - variable: "SERVICE_NAME"
       label: "Service Name"
       required: true
-      default: "Cluster Master"
+      default: "cluster-master"
       type: "string"
     - variable: "SERVICE_PORT"
       label: "What port to listen on"
@@ -14,12 +14,12 @@
       type: "int"
       default: 80
     - variable: "FRONTEND_NAME"
-      label: "Frontend Name"
+      label: "cluster-master Name"
       required: true
-      default: "Cluster Master"
+      default: "cluster-master"
       type: "string"
-    - variable: "FRONTEND_REPLICAS"
-      label: "Replicas for the frontend RC"
+    - variable: "cluster-master_REPLICAS"
+      label: "Replicas for the cluster-master RC"
       required: true
       type: "int"
       default: 3
