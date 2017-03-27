@@ -4,9 +4,6 @@ metadata:
   name: ${TEST_NAME}
   labels:
     name: ${TEST_NAME}
-spec:
-    selector:
-    name: ${TEST_NAME}
   template:
     metadata:
       labels:
